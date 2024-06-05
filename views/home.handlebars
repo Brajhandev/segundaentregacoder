@@ -1,0 +1,19 @@
+<h1>{{titulo}}</h1>
+{{!-- {{#if haylistado}} --}}
+<h4>Listado de productos</h4>
+<ul class="row">
+    {{#each listado}}
+    <div class="card m-2" style="width: 18rem">
+        {{!-- <img src="" class="card-img-top" alt="..."> --}}
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text">precio: ${{this.price}}</p>
+            {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+        </div>
+    </div>
+    {{/each}}
+</ul>
+{{!-- {{else}}
+<p>no hay aptitutes</p>
+{{/if}} --}}

@@ -1,0 +1,46 @@
+<h1>{{titulo}}</h1>
+<div class="container">
+    <form class="row g-3 mb-4" id="form">
+        <div class="col-md-6">
+            <label for="titulo" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="titulo">
+        </div>
+        <div class="col-md-6">
+            <label for="codigo" class="form-label">Codigo</label>
+            <input type="text" class="form-control" id="codigo">
+        </div>
+        <div class="col-md-6">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="text" class="form-control" id="precio">
+        </div>
+        <div class="col-md-6">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="text" class="form-control" id="stock">
+        </div>
+        <div class="col-12">
+            <label for="descripcion" class="form-label">descripcion</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="">
+        </div>
+        <div class="col-12">
+            <label for="categoria" class="form-label">Categoria</label>
+            <input type="text" class="form-control" id="categoria" placeholder="gaseosa, galleta, etc">
+        </div>
+
+        <div class="col-12">
+            <button id="guardar" type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>
+<h4>Listado de productos</h4>
+<ul id="listadoproducts" class="row">
+    {{!-- {{#each listado}}
+    <div class="card m-2" style="width: 18rem">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.description}}</p>
+            <p class="card-text">precio: ${{this.price}}</p>
+            <button class="btn btn-danger">Borrar</button>
+        </div>
+    </div>
+    {{/each}} --}}
+</ul>
